@@ -1,1 +1,11 @@
+=== BSc Thesis ===
+
 My BSc Thesis written in Finnish ...
+
+== Compile ==
+
+Use command `make` to compile and the pdf-file is in build/thesis.pdf.
+
+== Useful links ==
+
+tktltiki-guide: http://www.cs.helsinki.fi/u/leino/opetus/tiki-k09/pohja/latex/tktltiki-ohje.pdf
