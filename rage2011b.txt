@@ -1,0 +1,18 @@
+%% Extreme Apprenticeship Method: Key Practices and Upward Scalability
+%% Arto Vihavainen, Matti Paksula, Matti Luukkainen, Jaakko Kurhila 2011
+
+rage 2011a sisältää pääasiassa samat asiat, mutta tässä tulee täydennyksiä.
+
+Yliopiston ohjelmointikurssi voi olla haitallinen epätehokkaana työkaluna ja vanhoina akateemisina tapoina, jotka täytyy unohtaa, jotta voi pätevöittää koodauksen laatua.
+
+Ohjaajalta vaaditaan sellaista asennetta, että hän on valmis kohtaamaan opiskelijan kasvotusten ja aktiivisesti ja innokkaasti auttamaan haasteiden kanssa.
+
+Tehtävien aktiivinen ratkaiseminen tuo rutiinia ja luottamusta. Myös ympäristö ja työkalut tulevat tutuiksi.
+
+Hyvien ohjelmointitapoja, kuten clean code, pakotetaan käyttöön.
+
+Uudet pajaohjaajat pystyivät tukemaan oppimista ilman erillistä koulutusta.
+
+Luentojen merkitys väheni olemattomaksi, jos tehtävät olivat hyvin suunniteltuja ja henkilökohtaista tukea niiden ratkaisemiseen oli saatavilla.
+
+Henkilökohtaisen tuen määrä ei tarvinnut olla suurimuotoista vaan muutama hyvin käytetty minuutti auttoi opiskelijan oikeeseen suuntaan tehtävän parissa.
