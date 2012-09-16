@@ -1,0 +1,28 @@
+%% A Software Craftsman's Approach to Data Structures
+%% Matti Luukkainen, Arto Vihavainen, Thomas Vikberg 2012
+
+Tietorakenteet kurssi on kulmakivikurssi monessa tietojenkäsittelytieteen mielessä.
+
+Perinteisesti tietorakennekurssilla on esitetty yksi tietorakenne kerrallaan.
+
+Perinteisessä mallissa opiskelijat eivät saaneet mahdollisuutta löytää tietorakenteita itse.
+
+Valaisevampaa olisi nähdä esimerkkien avulla tietorakenteiden muodostus askel askeleelta.
+
+Algoritmit kirjoitetaan yleensä suurina yksittäisinä kokonaisuuksina, joissa muuttujat ovat nimetty yksittäisillä merkeillä.
+
+Algoritmeissä on yleensä jotain omia kokonaisuuksia, jotka pseudokoodissa usein toistetaan yleisinä kokonaisuuden osina.
+
+Pseudokoodi rikkoo ohjelmistokehityksen hyväksi todettuja käytäntöjä.
+
+Tietorakenteet ja niihin liittyvät algoritmin esitetään esimerkein, jotka koostetaan askel askeleelta.
+
+Testivetoinen kehitys sopii hyvin tietokanteiden toteuttamiseen.
+
+Toimivien esimerkkien käyttö luennoilla koettiin opiskelijoiden keskuudessa tehokkaaksi oppimisen kannalta.
+
+Perinteisessä pseudokeskeisessä opetuksessa opiskelijat siirtyivät usein ”ohjelmistotuotantotilasta” ”algoritmitilaan”, jolloin hyvät ohjelmointitavat usein unohdettiin.
+
+Opiskelijoille näytettiin, että he hyötyvät hyvärakenteellisesta, automaattisesti testatusta ja ylläpidettävästä koodista.
+
+Parhaita ohjelmointitapoja käytettiin prosessissa, sillä se auttoi ratkaisun ymmärtämisessä.
