@@ -1,0 +1,106 @@
+%% Extreme Apprenticeship Method in Teaching Programming for Beginners
+%% Arto Vihavainen, Matti Paksula, Matti Luukkainen 2011
+
+Ohjelmoinnin opetus on hankalaa ja siitä ei ole konsensusta, mikä on tehokkain tapa opettaa ohjelmointia.
+
+Ongelmana ei ole yksittäisen kielen syntaksin tai semantiikan opettelu vaan prosessin hallinta, siten että yhdistetään paloja järkeväksi ohjelmaksi.
+
+Ohjelmointi prosessia tuetaan vain vähäsen, minkä seurauksena tehtävien teko on hankalaa aloittelijoille.
+
+Opiskelijat voivat oppia huonoja tapoja ratkastessaan ongelmia itsenäisesti.
+
+Tilanne, jossa opiskelijat tekevät tehtäviä itsenäisesti, tunnetaan yleisemmin minimaalisesti ohjattuna ympäristönä.
+
+Minimaalisesti ohjattu lähestyminen ei ole optimaalinen aloittelijoiden oppimiselle.
+
+Kisällioppimisessa (Extreme Apprenticeship) on vahvoja vaikutteita ohjatuista ohjelmointiharjoituksista.
+
+Kognitiivisessa kisällioppimismallissa pääpaino on itse prosessissa eikä tuotteessa.
+
+Kognitiivisessa kisällioppiminen pistää suuren vaikutuksen valmennuksen optimointiin ja ohjauksen saatavuuteen.
+
+Motivaatiolla ja mukavuusasteella on merkittävä vaikutus oppimiseen.
+
+Kognitiivisessa kisällioppimismallilla on monia sovelluksia ohjelmoinnin opetuksessa positiivisin tuloksin.
+
+Kognitiivisene kisällioppiminen jakaa ohjauksen kolmeen vaiheeseen: mallintamiseen, oppimisen oikea-aikainen tukemiseen ja häivytykseen.
+
+Mallintamisvaiheessa opettaja antaa opiskelijoille konseptuaalisen mallin prosessista. Tehokastapa on antaa käytännön esimerkkejä.
+
+Käytännön esimerkit näyttävät esim. tehtävän suorittamisen alusta loppuun. Opettaja ajattelee ääneen jokaisen vaiheen ja päätelmän ratkaistessaan ongelmaa.
+
+Oppimisen oikea-aikaisessa tukemisessa opiskelijat tekevät tehtäviä kokeneempien opastuksessa. Opastajat antavat tarpeeksi vihjeitä, jotta opiskelija voi oivaltaa vastauksen itse.
+
+Häivytysvaiheessa opiskelija alkaa itse hallitsemaan tehtäviä, joten tukemista vähennetään.
+
+Ohjelmointiharjoitukset ovat oleellinen osa ohjelmoinnin oppimisessa.
+
+Aktiiviseen oppimiseen pohjautuvissa metodeissa ohjelmoiminen on suuressa osassa.
+
+Ohjelmointiharjoituksilla voi olla paljon tärkeämpi osa kuin teorian opettamisella luennoilla.
+
+Ohjelmointiharjoituksilla on valtava vaikutus opiskelijoiden motivaatioon.
+
+Opiskelijoiden ratkaisusta ja ongelmaratkaisutavoista keskustelulla vihjeiden annon ohella on postiivinen vaikutus motivaatioon.
+
+Kisällioppimisen arvot:
+
+- Tekemällä oppiin, harjoitus tekee mestarin.
+
+- Jatkuva palaute, opiskelija saa monitasoista palautetta ja ohjaaja saa palautetta seuraamalla opiskelijoiden edistymistä ja haasteilla.
+
+- Ei kompromisseja, harjoittelua tulee tehdä, kunnes asian hallitsee.
+
+- Kisällistä tulee mestari.
+
+- Saarnaamisen välttäminen, luentojen tulee kattaa vain vähimmäismäärä alkuun pääsemisessä.
+
+- Olennaiset esimerkit, luennoilla tulee olla vain olennaisia esimerkkejä.
+
+- Aloita ajoissa, ensimmäisellä viikolla opiskelijat saavat ratkaistavaksi laajan määrän yksinkertaisia tehtäviä, millä saadaan rutiinia ja motivaatiota.
+
+- Apu on saatavilla.
+
+- Pienet maalit, harjoitukset on jaettu pieniin osiin, joilla on selkeät tavoitteet. Pienet askeleet takaavat opiskelijoille oppimis- ja edistymiskokemuksia.
+
+- Harjoitukset ovat pakollisia, sillä ne ovat ensisijainen opetuskeino.
+
+- Rutiinin harjoittaminen, harjoitusten määrän tulee olla korkea ja jotkut kertaavat oppimaa.
+
+- Selkeät ohjenuorat, harjoituksilla on selkeä aloituspiste ja rakenteet ongelman selvittämiseen.
+
+- Tiedonhakuun rohkaiseminen, harjoituksia tehdessä opiskelijoiden tulee etsiä tietoa, jota ei luennolla katettu.
+
+Saarnaamisen vähentämiseksi luentoja on vähenetty.
+
+Harjoituksissa opiskelijoita rohkaistaan etsimään tietoa itse.
+
+Materiaalin tulee antaa oleellisia esimerkkejä harjoitusten suorittamiseen.
+
+Opiskelijoita on syytä muistuttaa, että tehtävät ovat yleensä muunnoksia esimerkkien ongelmista.
+
+Kielen rakenteiden lisäksi ongelmaratkaisutaitoa tarvitsee ohjelmoinnissa.
+
+Ongelmien ratkaiseminen tulee havainnollistaa askel askeleelta. Tälläinen menettely auttaa opiskelijoita tunnistamaan hyviä tapoja ratkaista ohjelmointiongelmia.
+
+Aktiivinen ohjelmointitehtävien tekeminen tuo rutiinia ja jatkuvan onnistumisen tunteen saavuttamalla pieniä maalia. Alussa on tärkeä luoda ohjelmointirutiinia.
+
+Suurempia ohjelmia luodessa opiskelijoille näytetään, kuinka isot tehtävät jaetaan pieniksi tehtäviksi, ja kuinka tämä on tärkeä taito ohjelmoinnissa.
+
+Harjoitusten vaikustaso suunniteltiin kasvamaan ajan myötä.
+
+Aluksi tehtävänannon mukana annettiin ohjelman tulostus, jonka avulla ohjelman toiminen voitiin tarkistaa ja pienet maalit saavutettiin.
+
+Tulostus antaa myös vihjeitä, miten ohjelman voi koostaa.
+
+Myöhemmin opiskelijat saavat valmiin pääohjelman, jonka avulla ohjelmaa voi kokeilla.
+
+Ensimmäinen harjoitustilaisuus on syytä pitää heti luennon jälkeen.
+
+Ohjaajat tarkastivat valmiit ratkaisut, jotta hyviä ohjelmointitapoja voidaan pakottaa. Virheellisistä lähestymisistä huomautettiin ja opiskelijat tekivät harjoituksen osia uusiksi.
+
+Opiskelijoille annetut vihjeet toimivat jatkuvana palautteena ja ne ovat oleellinen osa hyviä ohjelmointi- ja ongelmaratkaisutapoja. Avainasia on, että opiskelijoille tuetaan, jotta he voivat ratkaista ongelmat itse.
+
+Kisällioppiminen on hyvä rakenne opettaa taitoja, joita tarvitaan rutiini rakentamiseen ja hyvien tapojen oppimiseen.
+
+Oleelliset tehtävät ovat avain asemassa tekemällä oppimisessa kisällioppimismallissa.
