@@ -1,0 +1,76 @@
+%% Apprentice-Based Learning Via Integrated Lectures and Assignments
+%% Michael Kölling, David J. Barnes 2008
+
+Sopiva käytännönläheinen työ on avain onnistumiseen, niin opettamisessa kuin oppimisessa.
+
+Oppijakeskeiset tehtävät, jotka vangitsevat opiskelijoiden mielenkiinnon, todennäköisesti luo jännityksen tunnetta ja motivoi pidempään tutkimiseen.
+
+Ohjelmointiprojektit, joilla on mielenkiintoinen päämäärä eikä vain puhdasta syntaksiharjoitusta, johtavat todennäköisesti valaistumiseen ja ovat palkitsevia, niin opiskelijoille kuin opettajille.
+
+Alkukurssista ei ole helppo seurata, miten opiskelijat voivat työstää tarpeeksi isoja ongelmia, jotka ovat oikeasti kiinnostavia.
+
+Usein on vaikea luoda yhteys luennon ja harjoitusten välille.
+
+Peruskurssin suorittajilla on yleensä laajempi kokemus tyydytettävänä.
+
+Merkittävän kokoiset tehtävät vaativat tukea ympäristöltä, joka on usein monimutkainen tai ei tue hyvää tukea opettamis- ja oppimisprosessiin.
+
+Uusien ohjelmointirakenteiden tai tietorakenteiden esittely on oleellisempaa kuin kielen rakenteiden, mikä eroaa tavanomaisesta kieliominaisuuslähtöisestä lähestymistavasta.
+
+Uskottavan viitekehyksen tarjoaminen ominaisuuksille, rakenteille ja algoritmeille saa opiskelijat todennäköisemmin oppimaan kieliriippumattomia taitoja itse ohjelmointikielen lisäksi.
+
+Kutsutaan myös ongelmalähtöiseksi motivoinniksi.
+
+Javan tulon seurauksena opetusyhteisö muodostuu suhteellisen vakaasta kielen käytöstä ja kasvava hyväksyttävän pedagogiikan ajattelu häiriintyi.
+
+Vanhojen käsitteiden tuomisen korkealaatuisena esittelynä olio-ohjelmointiin on pedagogisvetoista.
+
+Yleisesti luennot esittelevät uusia ohjelmointikäsitteitä tai -tekniikoita, joita tehtävät tuovat käytäntöön.
+
+Suurempien tehtävien kohdalla luennoilla niiden pois jättämiseen on suuri houkutus, koska kurssimateriaali käsittelisi sitä pidemmän ajan kuluessa.
+
+Alkuvaiheen ohjelmointikursseilla tälläinen erottelu rajaa opiskelijan sitoutumista käytännöllisiin ohjelmointitehtäviin ja voi olla epäavuliasta.
+
+Toisena ongelmana on se, että opiskelijoita on vaikea saada tekemään asiat hyvin.
+
+Kun opiskelijat kamppailevat ohjelmiensa parissa, heillä on usein vähäsen aikaa miettiä muita kuin toiminnallisia näkökulmia, kuten ohjelman rakenteellinen laatu.
+
+Yleisesti kurssit jättävät laadulliset asiat myöhäisemmille kursseille ja keskittyvät siihen, että saadaan jotain ajettavaa.
+
+Olemassa olevan koodin läpikäyminen on oleellista varhaisessa vaiheessa, koska se on perustava osa ohjelmointitoimintaa.
+
+Ongelmalähtöinen kehitys esittelee käytännöllisen ohjelmointiongelman ja sitten kasan mahdollisia ratkaisuja.
+
+Luennot ja harjoitukset kulkevat tiiviisti yhdessä ja luo tarpeen uudelle luentomateriaalille.
+
+Nykyaikaiset ohjelmistotuotantotehtävät tulee liittää aikasin mukaan.
+
+Pääasiallinen tehtävä on kirjoittaa koodia, mutta se ei heijasta todellisuuteen, jossa tehtävät koostuvat olemassa olevan koodin lukemisesta ja ymmärtämisestä, ylläpitämisestä ja refaktoroinnista, sovittamisesta ja laajentamisesta.
+
+Koodin luku- ja ylläpitotaidot ovat pääasiallisia tehtäviä kenelle tahansa ohjelmoijalle.
+
+Mikään näistä päämääristä ei ole uusi, mutta niiden käyttöönottaminen on ollut hidasta. Käyttöönottaminen on usein ollut haastavaa.
+
+UML antaa ulkopuolisen näkemyksen koko sovelluksen rakenteesta ja pakottaa keskusteluun luokkisen välisistä riippuvuuksista.
+
+On tärkeä käsitellä koodin toistoa, rikkinäistä kapselointia ja huonosti jaoteltua vastuuta, ja miten ne tekevät elämästä hankalaa.
+
+Refaktorointi on tärkeä osa prosessia, sillä laatu kasvaa vaikka toiminnallisuus pysyy samana.
+
+Testaus täytyy olla mukana ja tulee ymmärtää, että se kulkee rinnakkain kehityksen kanssa ja harvoin tulee perässä.
+
+Refaktorointiprosessi auttaa arvioimaan koodin riippuvuuksia ja yhteenkuuluvuutta, paikallisten muutosten lisäksi.
+
+Opiskelijoilla tulee olla mahdollisuus tarkkailla, miten ohjaaja ratkaiseee oleellisen tehtävän selostaen ja vastaten kysymyksiin.
+
+Tärkeitä osa-alueita ovat annetun koodin käsittely, ongelman havaitseminen ja ratkaisun ideoiminen.
+
+Koodia pitää kommentoida sitä tehdessään ja tarvittavat testit luoda.
+
+Jos tulee virheitä, niin ne pitää käsitellä positiivisena asiana ja luonnollisena osana ohjelmointia.
+
+Uuden materiaalin ohjattu soveltaminen on toinen askel.
+
+Ratkaistavat ongelmat ovat yleensä esiteltyjen ongelmien muunnoksia.
+
+Opiskelijoilla tulee olla mahdollisuus suunnitella ja toteuttaa oma esimerkki vähimmäisellä ohjeuksella.
