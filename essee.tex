@@ -60,7 +60,34 @@ Kommentointi on tärkeä osa ohjelman kehitystä. Tosin yksikäsitteiset itseä�
 
 \section{Ohjelmointiprosessi}
 
-Ohjelmointia opettaessa keskitytään yleensä kielen rakenteisiin eikä kehitysprosessiin [Caspersen ja Kölling 2006, Vihavainen et all. 2011]
+Ohjelmointia opettaessa keskitytään yleensä kielen rakenteisiin eikä kehitysprosessiin [Caspersen ja Kölling 2006, Vihavainen et all. 2011]. Caspersen ja Kölling määrittelevät, että kurssien yleinen rakenne on, että esitellään ongelma ja sitä seuraa ratkaisun tarjoava ohjelma. Ainoastaan ohjelman rakenteita käydään lävitse. Opiskelijan näkökulmasta tämä näyttää, että ohjelmat muodostetaan yhdellä askeleella. Ohjelman kehitysprosessi on usein pääasiallisesti piilotettu ja todellisuus, jossa ohjelmat alkavat epäoptimeista ja osittain toteutetusta toiminnallisuudesta, jää ammattisalaisuudeksi. Esimerkit vaativat yleensä pieniä, helposti ymmärrettäviä askelia, jotka ovat melko erilaisia kuin valmiin ohjelmiston kehittämiseen vaativista tehtävät. Ongelmana tästä on, että opiskelijat ymmärtävät rakenteet, mutteivät osaa yhdistää niitä toimivaksi kokonaisuudeksi.
+
+Ratkaisuksi Caspersen ja Kölling ehdottavat, että opiskelijoille opetetaan sellaista ohjelmistokehitysprosessia, joka ohjaa järjestetyin askelin kohti ongelman ratkaisua. Samaa on nähtävissä Griesin esittelemässä tavassa. Ohjelmistokehitystä tulee kohdella kuin prosessia, joka koostuu osista ja pienistä askelista eikä isosta, monoliittisesta ratkaisusta. Jos ohjelmointiprosessia ei erikseen opeta, niin osa opiskelijoista ei pysty toteuttamaan haasteita. Osa taas kehittää oman prosessin, joka johtaa usein huonoihin lopputuloksiin. Sen lisäksi, että opiskelijat oppisivat ohjelmoimaan, tavoitteena on myös saavuttaa kehitystä koodin laadussa.
+
+\subsection{Mañana periaate}
+
+Mañana periaate on tämän pohjana ja periaate on seuraavanlainen:
+
+\begin{quotation}
+Kun metodia toteuttaessa toivot, että sinulla olisi tietynlainen apumetodi, kirjoita koodisi, kuten sinulla olisi sellainen ja toteuta apumetodi myöhemmin.
+\end{quotation}
+
+Mañanan käyttöönottaminen aloittelijoille:
+
+\begin{description}
+  \item[Erikoistapaussääntö] \hfill \\
+  Jos koodissasi on jokin erikoistapaus, tee siitä oma metodi
+  \item[Sisäkkäiset silmukat -sääntö] \hfill \\
+  Erota sisällä oleva silmukka omaksi metodiksi
+  \item[Koodin toisto -sääntö] \hfill \\
+  Jos kirjoitat saman koodilohkot kahdesti, tee siitä oma metodi
+  \item[Vaikean ongelman -sääntö] \hfill \\
+  Jos et keksi ongelmaa heti ratkaisua, eriytä se omaksi metodiksi
+  \item[Raskaan toiminnallisuuden -sääntö] \hfill \\
+  Jos lauseesta tulee pitkä tai monimutkainen, eriytä se omaksi metodiksi
+\end{description}
+
+Mañana periaatteessa syntyneitä metodeja ei tarvitse toteuttaa samantien.
 
 
 %% Rumasti lähdeviitteet HAX HAX
