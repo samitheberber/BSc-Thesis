@@ -1,0 +1,71 @@
+%% A Novice's Process of Object-Oriented Programming
+%% Michael E. Caspersen, Michael Kölling 2006
+
+Aloittelijoille suunnatut tekstit keskittyvät esittelemään kielen rakenteetn, ohjelmointikielen käsitteitä ja tietokoneohjelmia.
+
+Usein käsitellään ohjelmaa eikä ohjelmointia.
+
+Yleinen rakenne on, että esitellään ongelma ja sitä seuraa ratkaisun tarjoava ohjelma, jonka rakenteita käydään lävitse.
+
+Opiskelijan näkökulmasta tämä näyttää, että ohjelmat muodostetaan yhdellä askeleella.
+
+Ohjelman kehitysprosessi on usein pääasiallisesti piilotettu ja todellisuus, jossa ohjelmat alkavat epäoptimeista ja osittain toteutetusta toiminnallisuudesta, jää ammattisalaisuudeksi.
+
+Esimerkit vaativat yleensä pieniä, helposti ymmärrettäviä askelia, jotka ovat melko erilaisia kuin valmiin ohjelmiston kehittämiseen vaativista tehtävät.
+
+Ongelmana tästä on, että opiskelijat ymmärtävät rakenteet, mutteivät osaa yhdistää niitä toimivaksi kokonaisuudeksi.
+
+Ratkaisuna on opettaa opiskelijoille sellaista ohjelmistokehitysprosessia, joka ohjaa järjestetyin askelin kohti ongelman ratkaisua.
+
+Ohjelmistokehitystä tulee kohdella kuin prosessia, joka koostuu osista ja pienistä askelista eikä isosta, monoliittisesta ratkaisusta.
+
+Jos ohjelmointiprosessia ei erikseen opeta, niin osa opiskelijoista ei pysty toteuttamaan haasteita ja osa kehittää oman prosessin, joka johtaa usein huonoihin lopputuloksiin.
+
+Sen lisäksi, että opiskelijat oppisivat ohjelmoimaan, tavoitteena on myös saavuttaa kehitystä koodin laadussa.
+
+Aivan alussa opettajan tulee tarjota luokkarakenne.
+
+Ensimmäinen askel on luoda luokka, joka toteuttaa annetun rajapinnan. Metodit ovat pienimmät mahdolliset metodirungot, mitä kyseisellä toteutuksella saa. Näin tehdään jokaiselle luokalle.
+
+Toinen askel on luoda testitapaukset jokaiselle metodille. Nämä voi olla yksikkötestejä tai sitten pääluokaan tehty testitoiminnallisuus. Testit tulee olla ajettavia, mutta aluksi ne eivät yleensä mene lävitse.
+
+Kolmas askel on luoda luokalle vaihtoehtoisia mallinnuksia instanssimuuttujien muodossa ja muodostaa matriisi, jossa arvioi metodien toteutuksien haasteellisuuksia jokaiselle vaihtoehtoiselle mallinnukselle. Näistä valitaan toteutus, joka on yleisesti ottaen helpoin toteuttaa.
+
+Mallinnuskaavioita voi myöhemmin luoda myös toisilla kriteereillä, kuten tehokkuuden mukaan luokiteltuna.
+
+Neljäs askel on luoda instanssimuuttujat ja määritellä niiden raja-arvot. Myös kenttien sopiva alustus on toteutettava.
+
+Viides askel on metodien toteuttaminen, joka noudattaa seuraavaa sääntöä:
+  toista niin kauan kuin on toteuttamaton metodi
+    valitse toteuttamaton metodi
+    toteuta metodi
+
+  metodin toteuttaminen:
+  toista niin kauan kuin ei ole valmis
+    paranna metodia
+    testaa
+
+Metodien toteuttamisella ei ole pääasiallista järjestystä, mutta on suositeltavaa valita helpoin ja toteuttaa se ensin.
+
+Suuremmat kokonaisuudet on syytä pilkkoa pienemmiksi askeliksi.
+
+Mañana periaate on tämän pohjana ja periaate on seuraavanlainen:
+  Kun metodia toteuttaessa toivot, että sinulla olisi tietynlainen apumetodi, kirjoita koodisi, kuten sinulla olisi sellainen ja toteuta apumetodi myöhemmin.
+
+Mañanan käyttöönottaminen aloittelijoille:
+
+  Erikoistapaussääntö: jos koodissasi on jokin erikoistapaus, tee siitä oma metodi
+  Sisäkkäiset silmukat -sääntö: erota sisällä oleva silmukka omaksi metodiksi
+  Koodin toisto -sääntö: jos kirjoitat saman koodilohkot kahdesti, tee siitä oma metodi
+  Vaikean ongelman -sääntö: jos et keksi ongelmaa heti ratkaisua, eriytä se omaksi metodiksi
+  Raskaan toiminnallisuuden -sääntö: jos lauseesta tulee pitkä tai monimutkainen, eriytä se omaksi metodiksi
+
+Erillisiä metodeja ei tarvitse toteuttaa samantien.
+
+Tietyt säännöt ovat alunperin helposti omaksuttavia.
+
+Koodaustavan kehittäminen rohkaisee ymmärtämiseen ja periaatteiden soveltamiseen yleisellä tasolla.
+
+Opettajan tarjoamat testit ovat todella tärkeitä aikaisessa vaiheessa ohjelmoinnin opettelua.
+
+Metodien vastuita tulee miettiä, että kuuluuko jokin metodi toisen luokan hoidettavaksi.
