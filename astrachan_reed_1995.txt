@@ -1,0 +1,42 @@
+%% AAA and CS1: The Applied Apprenticeship Approach to CS1
+%% Owen Astrachan, David Reed 1995
+
+AAA (Applied Apprenticeship Approach) koostui kolmesta osasta: Odotusten muuttaminen, painopisteen muuttaminen, toimittamisen muutos.
+
+Opiskelijoilta tulisi odottaa ohjelmien luku- ja muutostaitoja ennenkuin heidän pitäisi tuottaa niitä.
+
+Ohjelmien ja luokkien suunnittelu on vaikea tehtävä, joten opiskelijoiden ei tulisi odottaa osaavan sitä yhden kurssin jälkeen.
+
+Kisällioppiminen pitää huolen, että ohjelmien laajentaminen ja myöhemmin niiden luominen alusta asti, kehittää hyvää suunnittelu taitoa ajan kuluessa.
+
+Ohjelmointiongelmien painopiste halutaan muuttaa.
+
+Leikkiohjelmointitehtävät opettavat vain kielen rakenteita.
+
+Kisällioppimisen ja olio-ohjelmointikielen yhdistämissä opiskelija voi luoda mielenkiintoisia ohjelmia ja nähdä laskennan todellisen voiman.
+
+Oppimateriaali koostuu uudelleenkäytettävistä luokista, joita voi hyödyntää oikean elämän sovelluksissa. Tämä esittelee tietojenkäsittelytieteen eleganttina ja hyödyllisenä tieteenä.
+
+Sovelluksia voi käyttää onnistuneesti esittelemään kielen eri rakenneosia ja luomaan sisältöä opiskeluun.
+
+Esimerkkien tulee olla laajennettavasti kehitettäviä, sillä lukuisia kielen rakenneosia voi tällöin käyttää tutusssa asiayhteydessä.
+
+Käsitteiden uudelleen käyttäminen on opiskelijoille yhtä tärkeää kuin koodin uudelleen käyttäminen.
+
+Laajennettavat esimerkit rohkaisevat koodin uudelleenkäyttöön ja kannustaa hyvään suunnitteluun.
+
+On tärkeää, että kurssia tuetaan erilaisilla harjoituksilla, oppimateriaaleilla ja ohjelmakomponenttikirjastoilla, jotka hyödyntävät opiskelijoiden kaikkia taitoja.
+
+Tehtävät liittyvät ja esittelevät oikean elämän sovelluksia.
+
+Ongelmien tulee olla sellaisia, että niiden ratkaisemiseen vaaditaan tietokonetta. Tällöin sovellukset motivoivat enemmän.
+
+Käsitteiden uudelleenkäyttö mahdollistaa saman ongelman ratkaisun oppimisen usealla eri tavalla.
+
+Aliohjelmien käyttö kuuluu hyvään suunnitteluperiaatteeseen ja tekee koodista uudelleenkäytettävää.
+
+Kapselointi on tärkeää.
+
+Kehittyneempien ohjelmarakenteiden ja käsitteiden käytössä on erityisen tärkeä huomioidan hyvä suunnittelu.
+
+Selkeä erottelu rajapinnan ja toteutuksen välillä auttaa paikallistamaan muutokset.
