@@ -1,0 +1,56 @@
+%% What Should We Teach in an Introductory Programming Course?
+%% David Gries 1974
+
+Ensimmäisellä ohjelmointikurssilla tulisi vastata kolmeen pääasiaan: Miten ongelmia ratkaistaan? Miten kuvataan algoritmillinen ratkaisu ongelmaan? Miten algoritmi todetaan oikeelliseksi?
+
+Pääteema on rakenteellinen ohjelmointi.
+
+Kurssilla tulee opettaa yleisiä ongelmanratkaisutapoja.
+
+Opiskelijat oppivat yleensä ratkaisemaan tietyn tyyppisiä ongelmia eikä yleistä ongelmanratkaisua.
+
+Opiskelijoille opetetaan löytämään algoritmillinen ratkaisu ongelmaan.
+
+Opiskelijoille kuvataan työkalut ja annetaan muutama esimerkki, jonka jälkeen pyydetään kirjoittamaan ohjelmia. Aloittamisesta, toteustustapojen löytämisestä, ajatusten rakenneellistamisesta ja miten päädytään hyvin jäsennettyyn, kirjoitettuun ja luettavaan ohjelmaan, ei sanota melkein mitään.
+
+Analogia:
+Kaapintekokurssilla ohjaaja esittelee sahan, laudan, vasaran ja muutaman muun työkalun parin minuutin ajan. Sitten hän näyttää kauniiksi viimeistellyn kaapin ja lopulta antaa opiskelijoille pari viikkoa aikaa toteuttaa oma kaappi.
+Voisit ajatella ohjaajan olevan hullu.
+
+Pitäisi pystyä opettamaan yksinkertaista ongelmanratkaisua säännöin ja lukuisin esimerkein, jotka koostetaan opiskelijoiden sovelluksista.
+
+Yleistä ongelmanratkaisua on mietitty melko kovasti ja se on sovellettavissa ohjelmointiin.
+
+Descartes esittää neljä sääntöä:
+1. Älä koskaan hyväksy mitään totena, ellei sitä ole varmasti ja perustellusti todistettu.
+2. Jaa vaikeat asiat niin moneen tosaa kuin mahdollista.
+3. Tee ensin helpot asiat ja siirry sitten vaikeampiin.
+4. Tee luetteloista niin täydelliset ja arvosteluista niin yleisiä, ettei mitään voi jättää huomiotta.
+
+Hyman ja Anderson täydentävät:
+1. Käy läpi kaikki ongelman kohdat nopeassa tahdissa useaan kertaan, kunnes muodostuu kaava, joka sisältää kaikki kohdat.
+2. Pidätä päätöstä ja älä kiirehdi johtopäätöksiin (Descartes ensimmäinen kohta)
+
+Jos näitä sääntöjä tottelee ohjelmoidessa, ne johtavat systemaattisuuteen ja kurinalaisuuteen, mitä suurimmalla osalla ohjelmoijista ei ole.
+
+Säännöt antavat aloittelijoilla ajatuksia, jotka voivat auttaa alkuun algoritmien muodostamisessa.
+
+Ohjelmoijien tulee tähdätä rakenteeltaan yksinkertaisiin algoritmeihin.
+
+Ohjelmointikurssin tulee opettaa ongelmaratkaisutapoja ohjelmointiin sovellettuna.
+
+Kurssin tarkoitus on näyttää, miten suunnitella ja toteuttaa rakenteeltaan hyviä ohjelmia.
+
+Kaaviot toimivat ohjelmointiprosessin apuna.
+
+Ohjelman dokumentoinnin tulee rohkaista systemaattiseen ja rakenteelliseen ohjelmointiin, ja ohjelmoijien tulee käyttää sitä ohjelmoidessaan.
+
+Ongelmaratkaisu on yksilöllistä, mutta voidaan antaa sääntöjä, jotka auttavat ymmärtämään ongelmanratkaisua.
+
+Ohjelman tulee koostua pienistä osista, jotka pystyy itsenäisesti todistamaan toimiviksi ja täten koko ohjelman voi todistaa toimivaksi.
+
+Törmätessään parempaan tapaan toteuttaa ohjelman palanen, niin siihen voi palata ja tehdä uudelleen.
+
+Jokainen ohjelman palanen on riittävän pieni, jotta sen voi ymmärtää.
+
+Kommentointi on tärkeä osa ohjelman kehitystä, mutta yksikäsitteiset itseään kommentoivat osat voidaan jättää kommentoimatta.
