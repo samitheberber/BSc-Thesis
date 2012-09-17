@@ -24,7 +24,7 @@ Ohjelmoinnin opetus on hankalaa ja siitä ei ole konsensusta, mikä on tehokkain
 
 David Griesin [Gries 1974] näkemys ohjelmoinnin opetuksesta sisältää yhä monia oleellisia asioita, jotka ovat vieläkin relevantteja opetusta kehittäessä. Griesin mukaan ensimmäisellä ohjelmointikurssilla opiskelijan tuli saada vastaukset kysymyksiin: Miten ongelmia ratkaistaan? Miten kuvataan algoritmillinen ratkaisu ongelmaan? Miten algoritmi todetaan oikeelliseksi?
 
-Griesin ohjelmointikurssin pääteemana on rakenteellinen ohjelmointi. Hänen mukaan kurssilla tulee opettaa yleisiä ongelmanratkaisutapoja. Opiskelijat oppivat yleensä ratkaisemaan tietyn tyyppisiä ongelmia eikä yleistä ongelmanratkaisua. Opiskelijoille on tarkoistus opettaa, miten ratkaistaan ongelma, johon on algoritmillinen ratkaisu.
+Griesin ohjelmointikurssin pääteemana on rakenteellinen ohjelmointi. Hänen mukaan kurssilla tulee opettaa yleisiä ongelmanratkaisutapoja. Opiskelijat oppivat yleensä ratkaisemaan tietyn tyyppisiä ongelmia eikä yleistä ongelmanratkaisua. Opiskelijoille on tarkoistus opettaa, miten ratkaistaan ongelma, johon on algoritmillinen ratkaisu. Kurssin tarkoitus on näyttää, miten suunnitella ja toteuttaa rakenteeltaan hyviä ohjelmia.
 
 Perinteiseen tapaan opiskelijoille kuvataan työkalut ja annetaan muutama esimerkki. Tämän jälkeen heitä pyydetään kirjoittamaan ohjelmia. Heille ei sanota melkein mitään siitä, miten heidän tulisi aloittaa. Opiskelijoiden tulee itse löytää mahdolliset toteutustavat ja keinot jäsentää omat ajatuksensa. Myöskin mysteeriksi jää se, miten päädytään hyvin jäsennettyyn, kirjoitettuun ja luettavaan ohjelmakoodiin. Griesillä on tähän hyvä analogia:
 
@@ -33,5 +33,27 @@ Kaapintekokurssilla ohjaaja esittelee sahan, laudan, vasaran ja muutaman muun ty
 
 Voisit ajatella ohjaajan olevan hullu!
 \end{quotation}
+
+Ohjelmointikursilla pitäisi pystyä opettamaan yksinkertaista ongelmanratkaisua säännöin ja lukuisin esimerkein. Esimerkit koostetaan opiskelijoiden harjoituksissa tekemistä sovelluksista. Yleistä ongelmanratkaisua on mietitty melko kovasti ja se on sovellettavissa ohjelmointiin. Descartes esittää neljä sääntöä:
+
+\begin{enumerate}
+  \item Älä koskaan hyväksy mitään totena, ellei sitä ole varmasti ja perustellusti todistettu.
+  \item Jaa vaikeat asiat niin moneen tosaa kuin mahdollista.
+  \item Tee ensin helpot asiat ja siirry sitten vaikeampiin.
+  \item Tee luetteloista niin täydelliset ja arvosteluista niin yleisiä, ettei mitään voi jättää huomiotta.
+\end{enumerate}
+
+Hyman ja Anderson täydentävät:
+
+\begin{enumerate}
+  \item Käy läpi kaikki ongelman kohdat nopeassa tahdissa useaan kertaan, kunnes muodostuu kaava, joka sisältää kaikki kohdat.
+  \item Pidätä päätöstä ja älä kiirehdi johtopäätöksiin (Descartes ensimmäinen kohta)
+\end{enumerate}
+
+Nämä säännöt ovat sovellettavissa ohjelmointiin. Jos näitä sääntöjä tottelee ohjelmoidessa, ne johtavat systemaattisuuteen ja kurinalaisuuteen, mitä suurimmalla osalla ohjelmoijista ei ole. Nämä säännöt antavat aloittelijoilla ajatuksia, jotka voivat auttaa alkuun algoritmien muodostamisessa. Ongelmaratkaisu on yksilöllistä, mutta voidaan antaa sääntöjä, jotka auttavat ymmärtämään ongelmanratkaisua.
+
+\subsection{Yksinkertaisilla askelilla eteenpäin}
+
+Ohjelmoijien tulee tähdätä rakenteeltaan yksinkertaisiin algoritmeihin [Gries 1974]. Ohjelman tulee koostua pienistä osista. Jokaisen palasen on oltava riittävän pieni, jotta sen voi ymmärtää. Jos pienet palaset pystyy itsenäisesti todistamaan toimiviksi ja täten koko ohjelman voi todistaa toimivaksi. Oppiessaan lisää on mahdollista törmätä parempaan tapaan toteuttaa ohjelman palanen. Tällöin siiheb on syytä palata ja toteuttaa se uudelleen paremmalla tavalla. Kommentointi on tärkeä osa ohjelman kehitystä. Tosin yksikäsitteiset itseään kommentoivat osat voidaan jättää kommentoimatta. Toinen tärkeä osa on kaavuot, jotka toimivat ohjelmointiprosessin apuna. Nämä kummatkin ovat osa ohjelman dokumentointia. Ohjelman dokumentoinnin tulee rohkaista systemaattiseen ja rakenteelliseen ohjelmointiin, ja ohjelmoijien tulee käyttää sitä ohjelmoidessaan.
 
 \end{document}
