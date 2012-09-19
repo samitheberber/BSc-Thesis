@@ -28,11 +28,11 @@ Tiivistelmä
 
 \section{Ohjelmoinnin opetuksen historia}
 
-Ohjelmoinnin opetus on hankalaa ja siitä ei ole konsensusta, mikä on tehokkain tapa opettaa ohjelmointia [Vihavainen et al. 2011]. Tästä asiasta on väitelty usean vuosikymmenen ajan. Useat yliopistot opettavat vielä perinteisen kaavan mukaisesti.
+Ohjelmoinnin opetus on hankalaa ja siitä ei ole konsensusta, mikä on tehokkain tapa opettaa ohjelmointia \cite{Vihavainen:2011:EAM:1953163.1953196}. Tästä asiasta on väitelty usean vuosikymmenen ajan. Useat yliopistot opettavat vielä perinteisen kaavan mukaisesti.
 
 \subsection{Peruskysymysten asettelu}
 
-David Griesin [Gries 1974] näkemys ohjelmoinnin opetuksesta sisältää yhä monia oleellisia asioita, jotka ovat vieläkin relevantteja opetusta kehittäessä. Griesin mukaan ensimmäisellä ohjelmointikurssilla opiskelijan tuli saada vastaukset kysymyksiin: Miten ongelmia ratkaistaan? Miten kuvataan algoritmillinen ratkaisu ongelmaan? Miten algoritmi todetaan oikeelliseksi?
+David Griesin \cite{Gries:1974:WTI:953057.810447} näkemys ohjelmoinnin opetuksesta sisältää yhä monia oleellisia asioita, jotka ovat vieläkin relevantteja opetusta kehittäessä. Griesin mukaan ensimmäisellä ohjelmointikurssilla opiskelijan tuli saada vastaukset kysymyksiin: Miten ongelmia ratkaistaan? Miten kuvataan algoritmillinen ratkaisu ongelmaan? Miten algoritmi todetaan oikeelliseksi?
 
 Griesin ohjelmointikurssin pääteemana on rakenteellinen ohjelmointi. Hänen mukaan kurssilla tulee opettaa yleisiä ongelmanratkaisutapoja. Opiskelijat oppivat yleensä ratkaisemaan tietyn tyyppisiä ongelmia eikä yleistä ongelmanratkaisua. Opiskelijoille on tarkoistus opettaa, miten ratkaistaan ongelma, johon on algoritmillinen ratkaisu. Kurssin tarkoitus on näyttää, miten suunnitella ja toteuttaa rakenteeltaan hyviä ohjelmia.
 
@@ -64,13 +64,13 @@ Nämä säännöt ovat sovellettavissa ohjelmointiin. Jos näitä sääntöjä t
 
 \subsection{Yksinkertaisilla askelilla eteenpäin}
 
-Ohjelmoijien tulee tähdätä rakenteeltaan yksinkertaisiin algoritmeihin [Gries 1974]. Ohjelman tulee koostua pienistä osista. Jokaisen palasen on oltava riittävän pieni, jotta sen voi ymmärtää. Jos pienet palaset pystyy itsenäisesti todistamaan toimiviksi ja täten koko ohjelman voi todistaa toimivaksi. Oppiessaan lisää on mahdollista törmätä parempaan tapaan toteuttaa ohjelman palanen. Tällöin siiheb on syytä palata ja toteuttaa se uudelleen paremmalla tavalla.
+Ohjelmoijien tulee tähdätä rakenteeltaan yksinkertaisiin algoritmeihin \cite{Gries:1974:WTI:953057.810447}. Ohjelman tulee koostua pienistä osista. Jokaisen palasen on oltava riittävän pieni, jotta sen voi ymmärtää. Jos pienet palaset pystyy itsenäisesti todistamaan toimiviksi ja täten koko ohjelman voi todistaa toimivaksi. Oppiessaan lisää on mahdollista törmätä parempaan tapaan toteuttaa ohjelman palanen. Tällöin siiheb on syytä palata ja toteuttaa se uudelleen paremmalla tavalla.
 
 Kommentointi on tärkeä osa ohjelman kehitystä. Tosin yksikäsitteiset itseään kommentoivat osat voidaan jättää kommentoimatta. Toinen tärkeä osa on kaavuot, jotka toimivat ohjelmointiprosessin apuna. Nämä kummatkin ovat osa ohjelman dokumentointia. Ohjelman dokumentoinnin tulee rohkaista systemaattiseen ja rakenteelliseen ohjelmointiin, ja ohjelmoijien tulee käyttää sitä ohjelmoidessaan.
 
 \section{Ohjelmointiprosessi}
 
-Ohjelmointia opettaessa keskitytään yleensä kielen rakenteisiin eikä kehitysprosessiin [Caspersen ja Kölling 2006, Vihavainen et all. 2011]. Caspersen ja Kölling määrittelevät, että kurssien yleinen rakenne on, että esitellään ongelma ja sitä seuraa ratkaisun tarjoava ohjelma. Ainoastaan ohjelman rakenteita käydään lävitse. Opiskelijan näkökulmasta tämä näyttää, että ohjelmat muodostetaan yhdellä askeleella. Ohjelman kehitysprosessi on usein pääasiallisesti piilotettu ja todellisuus, jossa ohjelmat alkavat epäoptimeista ja osittain toteutetusta toiminnallisuudesta, jää ammattisalaisuudeksi. Esimerkit vaativat yleensä pieniä, helposti ymmärrettäviä askelia, jotka ovat melko erilaisia kuin valmiin ohjelmiston kehittämiseen vaativista tehtävät. Ongelmana tästä on, että opiskelijat ymmärtävät rakenteet, mutteivät osaa yhdistää niitä toimivaksi kokonaisuudeksi.
+Ohjelmointia opettaessa keskitytään yleensä kielen rakenteisiin eikä kehitysprosessiin \cite{Caspersen:2006:NPO:1176617.1176741,Vihavainen:2011:EAM:1953163.1953196}. Caspersen ja Kölling määrittelevät, että kurssien yleinen rakenne on, että esitellään ongelma ja sitä seuraa ratkaisun tarjoava ohjelma. Ainoastaan ohjelman rakenteita käydään lävitse. Opiskelijan näkökulmasta tämä näyttää, että ohjelmat muodostetaan yhdellä askeleella. Ohjelman kehitysprosessi on usein pääasiallisesti piilotettu ja todellisuus, jossa ohjelmat alkavat epäoptimeista ja osittain toteutetusta toiminnallisuudesta, jää ammattisalaisuudeksi. Esimerkit vaativat yleensä pieniä, helposti ymmärrettäviä askelia, jotka ovat melko erilaisia kuin valmiin ohjelmiston kehittämiseen vaativista tehtävät. Ongelmana tästä on, että opiskelijat ymmärtävät rakenteet, mutteivät osaa yhdistää niitä toimivaksi kokonaisuudeksi.
 
 Ratkaisuksi Caspersen ja Kölling ehdottavat, että opiskelijoille opetetaan sellaista ohjelmistokehitysprosessia, joka ohjaa järjestetyin askelin kohti ongelman ratkaisua. Samaa on nähtävissä Griesin esittelemässä tavassa. Ohjelmistokehitystä tulee kohdella kuin prosessia, joka koostuu osista ja pienistä askelista eikä isosta, monoliittisesta ratkaisusta. Jos ohjelmointiprosessia ei erikseen opeta, niin osa opiskelijoista ei pysty toteuttamaan haasteita. Osa taas kehittää oman prosessin, joka johtaa usein huonoihin lopputuloksiin. Sen lisäksi, että opiskelijat oppisivat ohjelmoimaan, tavoitteena on myös saavuttaa kehitystä koodin laadussa.
 
@@ -99,19 +99,8 @@ Mañanan käyttöönottaminen aloittelijoille:
 
 Mañana periaatteessa syntyneitä metodeja ei tarvitse toteuttaa samantien.
 
-
-%% Rumasti lähdeviitteet HAX HAX
-\newpage
-
-\section{Lähteet}
-
-\begin{description}
-  \item [Caspersen ja Kölling 2006] Caspersen, M.E., Kölling, M.: A Novice's Process of Object-Oriented Programming (2006)
-  \item [Gries 1974] Gries, D.: What Should We Teach in an Introductory Programming Course? (1974)
-  \item [Vihavainen et al. 2011] Vihavainen, A., Paksula, M., Luukkainen, M.: Extreme Apprenticeship Method in Teaching Programming for Beginners (2011)
-\end{description}
-
 \bibliographystyle{tktl}
+\bibliography{essee}
 
 \lastpage
 
