@@ -11,7 +11,11 @@ LATEX_ARGS=--interaction batchmode --output-directory build
 
 $(TARGET): $(TEX)
 	pdflatex $(LATEX_ARGS) $(TEX)
+	cp thesis.bib build
+	cp tktl.bst build
+	cd build ; bibtex thesis ; cd ..
 	pdflatex $(LATEX_ARGS) $(TEX)
+	pdflatex $(LATEX_ARGS) $(ESSEE_TEX)
 
 $(ESSEE_TARGET): $(ESSEE_TEX)
 	pdflatex $(LATEX_ARGS) $(ESSEE_TEX)
