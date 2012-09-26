@@ -15,7 +15,7 @@ $(TARGET): $(TEX)
 	cp tktl.bst build
 	cd build ; bibtex thesis ; cd ..
 	pdflatex $(LATEX_ARGS) $(TEX)
-	pdflatex $(LATEX_ARGS) $(ESSEE_TEX)
+	pdflatex $(LATEX_ARGS) $(TEX)
 
 $(ESSEE_TARGET): $(ESSEE_TEX)
 	pdflatex $(LATEX_ARGS) $(ESSEE_TEX)
