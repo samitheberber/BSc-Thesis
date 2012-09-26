@@ -1,23 +1,21 @@
-all: clean build
-
-OUTPUT_DIR=build
 THESIS=thesis
+OUTPUT_DIR=build
 TEX=$(THESIS).tex
 AUX=$(OUTPUT_DIR)/$(THESIS).aux
-TARGET=$(THESIS).pdf
+TARGET=$(OUTPUT_DIR)/$(THESIS).pdf
 
 LATEX_ARGS=--interaction batchmode --output-directory $(OUTPUT_DIR)
 
-$(THESIS): $(TEX)
-	pdflatex $(LATEX_ARGS) $(TEX)
-	bibtex $(AUX)
-	pdflatex $(LATEX_ARGS) $(TEX)
-	pdflatex $(LATEX_ARGS) $(TEX)
+all: $(TARGET)
 
 clean:
 	rm -fr $(OUTPUT_DIR)
 
-hakemisto:
+$(OUTPUT_DIR):
 	mkdir $(OUTPUT_DIR)
 
-build: hakemisto $(THESIS)
+$(TARGET): $(OUTPUT_DIR) $(TEX)
+	pdflatex $(LATEX_ARGS) $(TEX)
+	bibtex $(AUX)
+	pdflatex $(LATEX_ARGS) $(TEX)
+	pdflatex $(LATEX_ARGS) $(TEX)
