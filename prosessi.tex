@@ -95,7 +95,45 @@ omaan aliohjelmaan.
 Mañana-periaatetta noudattaessa koodi säilyy helposti luettavana ja ohjelman
 oikeellisuus on helposti todistettavissa.
 
-% Top-down, REM, stubit, ...
+\subsubsection{Järjestelmällinen ohjelman kasaaminen}
+
+Järjestelmällisen ohjelman kasaamisen näyttäminen opiskelijoille ohjaa
+systemaattiseen ajatteluun ja noudattaa yleistä ongelmaratkaisuprosessia.
+Tanskassa on tutkittu tätä varsin hyvin tuloksin
+\cite{Caspersen:2006:NPO:1176617.1176741}.
+
+Opiskelijoille annetaan rajapinta, jonka ratkaisun pitää toteuttaa. Rajapinnan
+pohjalta he luovat luokan ja metodirungot. Metodirunkojen tulee olla
+mahdollisimman yksinkertainen eli sen pitää sisältää tarvittavat tiedot, jotta
+koodi menee kääntäjästä lävitse. Jos metodi ei palauta mitään, niin silloin se
+on tyhjä, muutta tapauksessa se palauttaa tyhjää tietoa vastaavan asia, kuten
+$null$ tai $0$ tietotyypistä riippuen.
+
+Tyhjän luokkarakenteen jälkeen luodaan testit. Testit ovat joko yksikkötestejä
+tai aloittelijoiden tapauksessa pääohjelmaan kirjotettuja kutsuja, jotka
+määrittelevät luokan toiminnan. Testien on mentävä kääntäjästä lävitse vaikkei
+niiden ajaminen tuota oikeaa tulosta.
+
+Testien jälkeen voidaan miettiä esitysvaihtoehtoja ilmentymämuuttujien avulla.
+On tärkeää painottaa, että toteutusmalleja on useita erilaisia, joten tässä
+vaiheessa on löydettävä ainakin kaksi erilaista vaihtoehtoa. Esimerkiksi
+päivämäärän voi tallentaa päivinä, kuukausina ja vuosina tai päivinä ajanlaskun
+alusta. Kun eri vaihtoehdot on selvillä, mietitään metodien toteutuksien
+vaikeuksia eri esitysvaihtoehdoille. Pelkkien kuluneiden päivien syöttäminen on
+todella yksinkertaista toteuttaa, kun taas päivissä, kuukausissa ja vuosissa
+ilmoitettuna tarvitaan erilaisia tarkistuksia, jotta tieto on oikein.
+Päivämäärän tulostaminen on taas helppoa, kun eri osat on tallennettu erikseen.
+
+Eri esitysvaihtoehdoista valitaan keskimäärin helpoin toteuttaa. Luodaan
+ilmentymämuuttujat alustuksineen ja määritellään raja-arvot. Tämän jälkeen
+toteutetaan metodit. Metodien toteuttamiseen Caspersen on selvittänyt hyvän
+algoritmin:
+
+Niin kauan kuin on toteuttamaton metodi, niin valitse toteuttamaton metodi ja
+toteuta se. Paranna ja testaa metodia niin kauan kunnes se on valmis.
+
+Metodien toteuttamisella ei ole järjestystä, mutta on suositeltavaa toteuttaa
+ensin helpoin ja siirtyä sitten seuraavaksi helpompaan.
 
 \subsection{Opetukseen sisällyttäminen}
 
