@@ -76,6 +76,25 @@ ohjelma koostuu ja miksi mikäkin rakenne on kuhunkin kohtaan valittu.
 
 \subsubsection{Mañana-periaate}
 
+Yksi tapa soveltaa yleistä ongelmaratkaisuprosessia on jakaa vaikeammat asiat
+aliohjelmakutsujen taakse ja toteuttaa varsinaiset aliohjelmat myöhemmin. Tähän
+ideaan pohjautuu Mañana-periaate \cite{Caspersen:2006:NPO:1176617.1176741}.
+Vaikea asia voi olla sellainen, johon ei keksi heti ratkaisua. Vaikeat asiat
+eivät ole ainoa tilanne, jolloin tulee käyttää Mañanaa. Jos ohjelmassa tulee
+vastaan jokin erikoistapaus, niin silloin sille tulee tehdä oma aliohjelma.
+
+Ohjelmakoodia tulee aina välillä refaktoroida. Tällöin Mañanan mukaan
+monimutkaiset koodipätkät tulee olla omissa aliohjelmissa. Pitkät lauseet tulee
+refaktoroida omiin aliohjelmiin, jolloin koodi säilyy lyhyenä ja helpommin
+luettavana. Jos jokin koodipätkä toistuu useaan kertaan, se tulee eriyttää
+aliohjelmaan. Tällöin, jos kyseiseen pätkään tulee muutos, niin riittää, että
+yhteen paikkaan tekee tarvittavan muutoksen ja koko ohjelma toimii halutulla
+tavalla. Sisäkkäisten silmukoiden kohdalla sisäsilmukan koodi tulee laittaa
+omaan aliohjelmaan.
+
+Mañana-periaatetta noudattaessa koodi säilyy helposti luettavana ja ohjelman
+oikeellisuus on helposti todistettavissa.
+
 % Top-down, REM, stubit, ...
 
 \subsection{Opetukseen sisällyttäminen}
