@@ -2,56 +2,59 @@
 
 Perinteisesti ohjelmointia on opetettu kirjallista materiaalia esittelemällä ja
 muutamalla materiaaliin pohjautuvalla yksinkertaisella ohjelmointitehtävällä.
-Tällä tavalla järjestetyllä kurssilla opiskelijat oppivat lähinnä ratkaisemaan
-tietyntyyppisiä tehtäviä eivät yleistä ongelmanratkaisua
-\cite{Gries:1974:WTI:953057.810447}.
-
 Aloittelijoille suunnattu oppimateriaali käsittelee yleisten ohjelmointiin
 liittyvien rakenteiden sijaan ohjelmointikielen rakenteita
 \cite{Caspersen:2006:NPO:1176617.1176741, Vihavainen:2011:EAM:1953163.1953196}.
 Opiskelijoille esitetään ongelma ja sen ratkaiseva valmis ohjelma. Ohjelman
-rakenteet käydään lävitse materiaalissa tai luennolla. Tällöin opiskelijoille
-syntyy kuva, että ohjelmat syntyvät yhdellä askeleella sopivia rakenteita
-yhdistelemällä, eikä ohjelman todellinen kehitysprosessi ilmene opiskelijalle.
-Seurauksena tästä on se, että opiskelijat ymmärtävät eri rakenteet, mutta eivät
-osaa luoda toimivaa ohjelmaa niitä yhdistelemällä.
+rakenteet käydään lävitse materiaalissa tai luennolla.
+
+Perinteisellä tavalla järjestetyllä kurssilla opiskelijat oppivat lähinnä
+ratkaisemaan tietyntyyppisiä tehtäviä eivätkä yleistä ongelmanratkaisua
+\cite{Gries:1974:WTI:953057.810447}. Valmiita ohjelmia esiteltäessä
+opiskelijoille syntyy kuva, että ohjelmat syntyvät yhdellä askeleella sopivia
+rakenteita yhdistelemällä, eikä ohjelman todellinen kehitysprosessi ilmene
+opiskelijalle.  Seurauksena tästä on se, että opiskelijat ymmärtävät eri
+rakenteet, mutta eivät osaa luoda toimivaa ohjelmaa niitä yhdistelemällä.
 
 Kursseilla käytetyt esimerkkiohjelmat ovat yleensä pieniä ja koostuvat
 yksinkertaisista askelista, mikä ei vastaa todellisuutta. Lisäksi ne opettavat
 vain kielen rakenteita \cite{Astrachan:1995:ACA:199691.199694}. Merkittävän
 kokoiset tehtävät vaativat ulkoista tukea \cite{Kolling:2008} eli sopivaa
-kehitysympäristöä (IDE). Tavallisesti tällainen ympäristö ei anna hyvää tukea
-opettamis- ja oppimisprosessille, koska ne ovat liian monimutkaisia eikä
-ohjelmointikielen tuki ole täydellinen. Asiat ovat näiltä osin menneet paljon
-parempaan suuntaan viime vuosien aikana. Alussa ohjelmointiprosessin sijaan
-täytyy opetella kehitysympäristön käyttö, mikä luonnollisesti vie aikaa
-ohjelmoinnin opetukselta. Kehitysympäristön käyttö kuitenkin vähentää kieleen
-liittyvien rakenteiden opettelua, mutta silloin on entistä tärkeämpää ymmärtää,
-miksi luotu koodi on tietynlaista. Siksi on tärkeää ettei alussa käytetä kaikkia
-IDEn ominaisuuksia vaan opiskelijat luovat itse kaiken alusta asti, jotta heillä
-on mahdollisuus ymmärtää kirjoittamansa ohjelmakoodi ja miksi se toimii kuten
-toimii.
+kehitysympäristöä (IDE). Tavallisesti kehitysympäristö ei anna hyvää tukea
+opettamis- ja oppimisprosessille, koska se on liian monimutkainen ja
+ohjelmointikielen tuki on vajaavainen.
 
-Javan ottaminen opetuskieleksi on tuonut hyviä ja huonoja asioita mukanaan.
-Sille on kehitetty hyviä kehitysympäristöjä ja se on suhteellisen vakaa kieli.
-Kuitenkin sen käyttöönotto lisäsi enemmän keskittymistä kielen rakenteisiin.
+Asiat ovat näiltä osin menneet paljon parempaan suuntaan viime vuosien aikana.
+Joka tapauksessa kurssin alussa ohjelmointiprosessin sijaan täytyy opetella
+kehitysympäristön käyttö, mikä luonnollisesti vie aikaa ohjelmoinnin
+opetukselta. Kehitysympäristön käyttö kuitenkin vähentää kieleen liittyvien
+rakenteiden opettelua, mutta silloin on entistä tärkeämpää ymmärtää, miksi
+kehitysympäristön tuottama koodi on tietynlaista. Jotta opiskelijoilla on
+mahdollisuus ymmärtää kirjoittamansa ohjelmakoodi ja miksi se toimii kuten
+toimii, on tärkeää ettei alussa käytetä kaikkia IDEn ominaisuuksia vaan
+opiskelijat luovat itse kaiken alusta asti.
+
+Javan ottaminen opetuskieleksi on tuonut hyviä ja huonoja asioita mukanaan
+\cite{Kolling:2008}. Sille on kehitetty hyviä kehitysympäristöjä ja se on
+suhteellisen vakaa kieli. Kuitenkin sen käyttöönotto on lisännyt enemmän
+keskittymistä kielen rakenteisiin. Yksinkertainen Java ohjelma vaatii
+kohtuullisen paljon Javan omaa syntaksia. Täten kielen syntaksia on osattava
+kohtalainen määrä ennen kuin yleisiä ohjelmointirakenteita voi opettaa.
 
 Ohjelmointiprosessin jäädessä piiloon, opiskelijat eivät pysty ratkaisemaan
 annettuja haasteita tai heille kehittyy oma prosessi
 \cite{Caspersen:2006:NPO:1176617.1176741}. Yleensä itsekehittynyt prosessi
-johtaa epäpäteviin ja huonosti suunniteltuihin lopputuloksiin. Yleensä valitaan
-ensimmäinen mieleen tullut ratkaisu. Moni opiskelija on tyytyväinen löydettyään
-edes jonkun ratkaisun eivätkä ole halukkaita tutustumaan muihin
-ratkaisuvaihtoehtoihin. Jos ohjelmointikursseilla opetetaan
-järjestelmällisyyteen pohjautuvaa ongelmanratkaisuprosessia, niin se ei
-ainoastaan auta opiskelijoita kehittämään ratkaisuja vaan myös parantaa
-ratkaisujen laatua.
+johtaa epäpäteviin ja huonosti suunniteltuihin lopputuloksiin. Tämä johtuu
+siitä, että yleensä opiskelija valitsee ensimmäisen mieleen tulleen ratkaisun.
+Moni on tyytyväinen löydettyään edes yhden ratkaisun eivätkä ole halukkaita
+tutustumaan muihin ratkaisuvaihtoehtoihin. Jos ohjelmointikursseilla opetetaan
+järjestelmällisyyteen pohjautuvaa ongelmanratkaisuprosessia
+(käsitellään luvussa \ref{järjestelmällisyyteen pohjautuva
+ongelmanratkaisuprosessi}), niin se ei ainoastaan auta opiskelijoita kehittämään
+ratkaisuja vaan myös parantaa ratkaisujen laatua.
 
 Ohjelmoinnin oppiminen ei saa olla ainoana tavoitteena vaan myös koodin laadun
 kehitys on tärkeää.
 
-Olemassa olevan koodin lukeminen ja muokkaaminen ovat tavallisimpia tehtäviä
-kelle tahansa ohjelmoijalle \cite{Kolling:2008}. Oppimisen kannalta on suotavaa
-käydä lävitse muiden kirjottamaa koodia varhaisessa vaiheessa. Muiden koodin
-korjaaminen auttaa hahmottamaan, mitkä ovat hyviä käytäntöjä ja mitä hyötyä on
-siitä, että koodin ylläpidettävyys on hyvä.
+Luvussa 2 tarkastellaan ongelmanratkaisuprosessia ja sen soveltamista
+ohjelmointiin. Luvussa 3 tarkastellaan kisällioppimista.
