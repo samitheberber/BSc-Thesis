@@ -51,7 +51,7 @@ sitten kirjoitettu auki.
 \subsection{Ohjelmointiin soveltaminen}
 
 Yleinen ongelmanratkaisuprosessi on sovellettavissa ohjelmointiin ja sen
-seuraaminen tuo ohjelmointiin määrätietoisuutta ja puhtautta.
+seuraaminen tuo ohjelmointiin määrätietoisuutta ja selkeyttä.
 
 \subsubsection{Griesin analogia}
 
@@ -68,32 +68,39 @@ kaappi. Ajattelisit ohjaajan olevan hullu!''
 Analogia kuvaa hyvin ohjelmoinnin opetusta. Opiskelijoille annetaan työkalut ja
 näytetään pari esimerkkiohjelmaa, mutta ei kerrota, miten esimerkkiohjelmat on
 toteutettu ja miksi. Tämän tyyppinen opetus rikkoo yleisen
-ongelmanratkaisuprosessin pääpiirteitä. Opiskelijoille tulee kuvata ensin
-ongelma, sitten näyttää miten sitä lähdetään pilkkomaan pienempiin
-ongelmapalasiin. Tämän jälkeen tulee kertoa, mitä ohjelmointirakenteita
-käytetään minkäkin osaongelman kohdalla. Lopulta opiskelijalle on selvää, mistä
-ohjelma koostuu ja miksi mikäkin rakenne on kuhunkin kohtaan valittu.
+ongelmanratkaisuprosessin pääpiirteitä.
+
+Ongelmalähtöisessä opetuksessa opiskelijoille tulee kuvata ensin ongelma ja
+sitten näyttää miten sitä lähdetään pilkkomaan pienempiin ongelmapalasiin. Tämän
+jälkeen tulee kertoa, mitä ohjelmointirakenteita käytetään minkäkin osaongelman
+kohdalla. Lopulta opiskelijalle on selvää, mistä ohjelma koostuu ja miksi
+mikäkin rakenne on kuhunkin kohtaan valittu.
 
 \subsubsection{Mañana-periaate}
 
+Tämä luku käsittelee Mañana-periaatetta, joka pohjautuu lähteeseen
+\cite{Caspersen:2006:NPO:1176617.1176741}.
+
 Yksi tapa soveltaa yleistä ongelmanratkaisuprosessia on jakaa vaikeammat asiat
 aliohjelmakutsujen taakse ja toteuttaa varsinaiset aliohjelmat myöhemmin. Tähän
-ideaan pohjautuu Mañana-periaate \cite{Caspersen:2006:NPO:1176617.1176741}.
-Vaikea asia voi olla sellainen, johon ei keksi heti ratkaisua. Vaikeat asiat
-eivät ole ainoa tilanne, jolloin tulee käyttää Mañanaa. Jos ohjelmassa tulee
-vastaan jokin erikoistapaus, niin silloin sille tulee tehdä oma aliohjelma.
+ideaan pohjautuu Mañana-periaate. Vaikea asia voi olla sellainen, johon
+ohjelmoija ei keksi heti ratkaisua. Vaikeat asiat eivät ole ainoa tilanne,
+jolloin tulee käyttää Mañanaa. Jos ohjelmassa tulee vastaan jokin erikoistapaus,
+sille tulee tehdä oma aliohjelma.
 
 Ohjelmakoodia tulee aina välillä refaktoroida. Tällöin Mañanan mukaan
-monimutkaiset koodipätkät tulee olla omissa aliohjelmissa. Pitkät lauseet tulee
-refaktoroida omiin aliohjelmiin, jolloin koodi säilyy lyhyenä ja helpommin
-luettavana. Jos jokin koodipätkä toistuu useaan kertaan, se tulee eriyttää
-aliohjelmaan. Tällöin, jos kyseiseen pätkään tulee muutos, niin riittää, että
-yhteen paikkaan tekee tarvittavan muutoksen ja koko ohjelma toimii halutulla
-tavalla. Sisäkkäisten silmukoiden kohdalla sisäsilmukan koodi tulee laittaa
-omaan aliohjelmaan.
+monimutkaiset koodinpätkät tulee sijoittaa omiin aliohjelmiin. Pitkät lauseet,
+kuten usean vaiheen sisältävät ehtolauseet, tulee refaktoroida omiin aliohjelmiin, jolloin koodi säilyy lyhyenä ja helpommin luettavana.
+
+Jos jokin koodipätkä toistuu useaan kertaan, se tulee eriyttää aliohjelmaan.
+Tällöin, jos kyseiseen pätkään tulee muutos, riittää, että yhteen paikkaan tekee
+tarvittavan muutoksen ja koko ohjelma toimii halutulla tavalla. Sisäkkäisten
+silmukoiden kohdalla sisäsilmukan koodi tulee laittaa omaan aliohjelmaan.
 
 Mañana-periaatetta noudattaessa koodi säilyy helposti luettavana ja ohjelman
-oikeellisuus on helposti todistettavissa.
+oikeellisuus on helppo todentaa. Suuremmat kokonaisuudet koostuvat pienistä
+osista, joita on helppo tarkastella ja niiden toimivuus todentaa. Täten
+suuremmat kokonaisuudet pystyy osoittamaan toimiviksi.
 
 \subsubsection{Järjestelmällinen ohjelman kasaaminen}
 
@@ -104,38 +111,41 @@ systemaattiseen ajatteluun ja noudattaa yleistä ongelmanratkaisuprosessia.
 Tanskassa on tutkittu tätä varsin hyvin tuloksin
 \cite{Caspersen:2006:NPO:1176617.1176741}.
 
-Opiskelijoille annetaan rajapinta, jonka ratkaisun pitää toteuttaa. Rajapinnan
+Opiskelijoille annetaan rajapinta, joka ratkaisun pitää toteuttaa. Rajapinnan
 pohjalta he luovat luokan ja metodirungot. Metodirunkojen tulee olla
-mahdollisimman yksinkertainen eli sen pitää sisältää tarvittavat tiedot, jotta
-koodi menee kääntäjästä lävitse. Jos metodi ei palauta mitään, niin silloin se
-on tyhjä, muutta tapauksessa se palauttaa tyhjää tietoa vastaavan asia, kuten
-$null$ tai $0$ tietotyypistä riippuen.
+mahdollisimman yksinkertaisia eli niiden pitää sisältää tarvittavat tiedot,
+jotta koodi menee kääntäjästä lävitse. Jos metodi ei palauta mitään, se on
+tyhjä, muussa tapauksessa se palauttaa tyhjää $null$ tai $0$ tietotyypistä
+riippuen.
 
 Tyhjän luokkarakenteen jälkeen luodaan testit. Testit ovat joko yksikkötestejä
 tai aloittelijoiden tapauksessa pääohjelmaan kirjotettuja kutsuja, jotka
 määrittelevät luokan toiminnan. Testien on mentävä kääntäjästä lävitse vaikkei
 niiden ajaminen tuota oikeaa tulosta.
 
-Testien jälkeen voidaan miettiä esitysvaihtoehtoja ilmentymämuuttujien avulla.
-On tärkeää painottaa, että toteutusmalleja on useita erilaisia, joten tässä
-vaiheessa on löydettävä ainakin kaksi erilaista vaihtoehtoa. Esimerkiksi
+Testien jälkeen voidaan miettiä vaihtoehtoisia esitystapoja ilmentymämuuttujien
+avulla. On tärkeää painottaa, että toteutusmalleja on useita erilaisia, joten
+tässä vaiheessa on löydettävä ainakin kaksi erilaista vaihtoehtoa. Esimerkiksi
 päivämäärän voi tallentaa päivinä, kuukausina ja vuosina tai päivinä ajanlaskun
-alusta. Kun eri vaihtoehdot on selvillä, mietitään metodien toteutuksien
-vaikeuksia eri esitysvaihtoehdoille. Pelkkien kuluneiden päivien syöttäminen on
+alusta. Kun vaihtoehdot ovat selvillä, arvioidaan metodien toteutuksien
+haastavuutta eri vaihtoehdoille. Pelkkien kuluneiden päivien antaminen on
 todella yksinkertaista toteuttaa, kun taas päivissä, kuukausissa ja vuosissa
 ilmoitettuna tarvitaan erilaisia tarkistuksia, jotta tieto on oikein.
 Päivämäärän tulostaminen on taas helppoa, kun eri osat on tallennettu erikseen.
 
 Eri esitysvaihtoehdoista valitaan keskimäärin helpoin toteuttaa. Luodaan
-ilmentymämuuttujat alustuksineen ja määritellään raja-arvot. Tämän jälkeen
-toteutetaan metodit. Metodien toteuttamiseen Caspersen on selvittänyt hyvän
-algoritmin:
+ilmentymämuuttujat alustuksineen ja määritellään raja-arvot, kuten kuukaudet
+ovat yhden ja kahdentoista välillä. Tämän jälkeen toteutetaan metodit. Metodien
+toteuttamiseen Caspersen on selvittänyt hyvän algoritmin:
 
 Niin kauan kuin on toteuttamaton metodi, niin valitse toteuttamaton metodi ja
 toteuta se. Paranna ja testaa metodia niin kauan kunnes se on valmis.
 
 Metodien toteuttamisella ei ole järjestystä, mutta on suositeltavaa toteuttaa
-ensin helpoin ja siirtyä sitten seuraavaksi helpompaan.
+ensin helpoin ja siirtyä sitten seuraavaksi helpompaan. Metodi on valmis, kun
+siinä ei ole mitään refaktoroitavaa. On tärkeää pitää vain yksi metodi työn
+alla, sillä siten mahdolliset ongelmat liittyvät ovat rajattu kyseiseen
+metodiin.
 
 \subsection{Opetukseen sisällyttäminen}
 
