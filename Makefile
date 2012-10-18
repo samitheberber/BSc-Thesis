@@ -1,12 +1,15 @@
 THESIS=thesis
+PRESENTATION=esitys
 OUTPUT_DIR=build
-TEX=$(THESIS).tex
-AUX=$(OUTPUT_DIR)/$(THESIS).aux
-TARGET=$(OUTPUT_DIR)/$(THESIS).pdf
+THESIS_TEX=$(THESIS).tex
+THESIS_AUX=$(OUTPUT_DIR)/$(THESIS).aux
+THESIS_PDF=$(OUTPUT_DIR)/$(THESIS).pdf
+PRESENTATION_TEX=$(PRESENTATION).tex
+PRESENTATION_PDF=$(OUTPUT_DIR)/$(PRESENTATION).pdf
 
 LATEX_ARGS=--interaction batchmode --output-directory $(OUTPUT_DIR)
 
-all: $(TARGET)
+all: $(THESIS_PDF) $(PRESENTATION_PDF)
 
 clean:
 	rm -fr $(OUTPUT_DIR)
@@ -14,8 +17,12 @@ clean:
 $(OUTPUT_DIR):
 	mkdir $(OUTPUT_DIR)
 
-$(TARGET): $(OUTPUT_DIR) $(TEX)
-	pdflatex $(LATEX_ARGS) $(TEX)
-	bibtex $(AUX)
-	pdflatex $(LATEX_ARGS) $(TEX)
-	pdflatex $(LATEX_ARGS) $(TEX)
+$(THESIS_PDF): $(OUTPUT_DIR) $(THESIS_TEX)
+	pdflatex $(LATEX_ARGS) $(THESIS_TEX)
+	bibtex $(THESIS_AUX)
+	pdflatex $(LATEX_ARGS) $(THESIS_TEX)
+	pdflatex $(LATEX_ARGS) $(THESIS_TEX)
+
+$(PRESENTATION_PDF): $(OUTPUT_DIR) $(PRESENTATION_TEX)
+	pdflatex $(LATEX_ARGS) $(PRESENTATION_TEX)
+	pdflatex $(LATEX_ARGS) $(PRESENTATION_TEX)
