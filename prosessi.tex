@@ -11,11 +11,11 @@ muodostaneet yleiselle ongelmanratkaisuprosessille rungon, jossa on
 seuraavanlaisia piirteitä \cite{Gries:1974:WTI:953057.810447}.
 
 Mitään asiaa ei tule koskaan hyväksyä totena ellei sille ole varmaa ja
-perusteltua tietoa. Jos ei tiedä asian paikkaansapitävyyttä, niin ei pidä
-olettaa sen olevan totta. Tästä on apua varsinkin silloin, kun etsii tietoa
+perusteltua tietoa. Jos asian paikkaansapitävyyttä ei tiedetä, sen ei pidä
+olettaa olevan totta. Tästä on apua varsinkin silloin, kun etsitään tietoa
 ongelmaan ja sen ratkaisutavoista. Lähteiden taustat tulee tarkistaa huolella
-ennen kuin alkaa soveltamaan saamaansa tietoa. Korjaaminen voi olla haastavaa,
-kun on soveltanut virheellistä tietoa.
+ennen kuin aletaan soveltaa saatua tietoa. Korjaaminen voi olla haastavaa, jos
+on sovellettu virheellistä tietoa.
 
 Vaikeat asiat tulee jakaa niin moneen osaan kuin mahdollista. Pieniä asioita on
 helpompi hallita kuin isoja. Tämän seurauksena yhden ison ongelman sijaan on
@@ -33,20 +33,20 @@ asiat tulee esitellä ja ne tulee ilmaista siten, ettei niitä voi tulkita vää
 
 Aluksi on tärkeä käydä kaikki ongelman yksityiskohdat nopeasti moneen kertaan
 lävitse, jotta kokonaiskuva ongelmasta selviää. Esimerkiksi ruuanvalmistuksessa
-on syytä käydä kaikki vaiheet lävitse, jotta tietää mitä aineksia ja välineitä
-tarvitsee ostaa tai ottaa esille. Tämän jälkeen ongelma on yksinkertaista jakaa
-moneen osaan. Ruokareseptit on jaettu pienempiin yksinkertaisiin vaiheisiin.
+on syytä käydä kaikki vaiheet lävitse, jotta tiedetään, mitä aineksia ja
+välineitä tarvitsee ostaa tai ottaa esille. Tämän jälkeen ongelma on
+yksinkertaista jakaa moneen osaan. Ruokareseptit on jaettu pienempiin
+yksinkertaisiin vaiheisiin.
 
-Esimerkiksi tutkielman kirjoittamiseen voi soveltaa yleistä
-ongelmanratkaisuprosessia. Ensin on saatava yleiskuva aiheesta, joka tässä
-tapauksessa on: Tietokonepelien vaikutus opiskeluun. Kun on yleiskuva, niin
-siitä voi kaivaa esiin pääpiirteet, joita ovat esimerkiksi millaisia
+Esimerkiksi tutkielman kirjoittamiseen voidaan soveltaa yleistä
+ongelmanratkaisuprosessia. Ensin on saatava yleiskuva aiheesta, joka voisi olla
+esimerkiksi, tietokonepelien vaikutus opiskeluun. Kun on yleiskuva, niin siitä
+voi kaivaa esiin pääpiirteet, joita ovat esimerkiksi millaisia
 tietokonepelityyppejä on. Pääpiirteet voidaan jakaa pienempiin alilukuihin,
 kuten väkivaltaa sisältävät pelit ja opetuspelit. Lopuksi tehdään yhteenveto,
-jossa kerrataan ongelmakohdat ja tutkimustulokset sekä kerrotaan niistä
-yleisellä tasolla, mutta siten, että se on tulkittavissa oikein. Tässä on ensin
-jaettu isommat kokonaisuudet pienempiin ja vielä pienempiin osiin, jotka on
-sitten kirjoitettu auki.
+jossa kerrataan ongelmakohdat ja tutkimustulokset. Tässä on ensin jaettu isommat
+kokonaisuudet pienempiin ja vielä pienempiin osiin, jotka on sitten kirjoitettu
+auki.
 
 \subsection{Ohjelmointiin soveltaminen}
 
@@ -84,23 +84,28 @@ Tämä luku käsittelee Mañana-periaatetta, joka pohjautuu lähteeseen
 Yksi tapa soveltaa yleistä ongelmanratkaisuprosessia on jakaa vaikeammat asiat
 aliohjelmakutsujen taakse ja toteuttaa varsinaiset aliohjelmat myöhemmin. Tähän
 ideaan pohjautuu Mañana-periaate. Vaikea asia voi olla sellainen, johon
-ohjelmoija ei keksi heti ratkaisua. Vaikeat asiat eivät ole ainoa tilanne,
-jolloin tulee käyttää Mañanaa. Jos ohjelmassa tulee vastaan jokin erikoistapaus,
-sille tulee tehdä oma aliohjelma.
+ohjelmoija ei keksi heti ratkaisua.
+
+Vaikeat asiat eivät ole ainoa tilanne, jolloin tulee käyttää Mañanaa. Jos
+ohjelmassa tulee vastaan jokin erikoistapaus, sille tulee tehdä oma aliohjelma.
+Tälläinen erikoistapaus on esimerkiksi janan piirtämisessä tilanne, jossa
+kummatkin päätepisteet ovat samassa koordinaatissa.
 
 Ohjelmakoodia tulee aina välillä refaktoroida. Tällöin Mañanan mukaan
 monimutkaiset koodinpätkät tulee sijoittaa omiin aliohjelmiin. Pitkät lauseet,
-kuten usean vaiheen sisältävät ehtolauseet, tulee refaktoroida omiin aliohjelmiin, jolloin koodi säilyy lyhyenä ja helpommin luettavana.
+kuten usean vaiheen sisältävät ehtolauseet, tulee refaktoroida omiin
+aliohjelmiin, jolloin koodi säilyy lyhyenä ja helpommin luettavana.
 
 Jos jokin koodipätkä toistuu useaan kertaan, se tulee eriyttää aliohjelmaan.
-Tällöin, jos kyseiseen pätkään tulee muutos, riittää, että yhteen paikkaan tekee
-tarvittavan muutoksen ja koko ohjelma toimii halutulla tavalla. Sisäkkäisten
-silmukoiden kohdalla sisäsilmukan koodi tulee laittaa omaan aliohjelmaan.
+Tällöin, jos kyseiseen pätkään tulee muutos, riittää, että ohjelmoija tekee
+tarvittavan muutoksen vain yhteen paikkaan ja koko ohjelma toimii halutulla
+tavalla. Sisäkkäisten silmukoiden kohdalla sisäsilmukan koodi tulee sijoittaa
+omaan aliohjelmaan.
 
 Mañana-periaatetta noudattaessa koodi säilyy helposti luettavana ja ohjelman
 oikeellisuus on helppo todentaa. Suuremmat kokonaisuudet koostuvat pienistä
 osista, joita on helppo tarkastella ja niiden toimivuus todentaa. Täten
-suuremmat kokonaisuudet pystyy osoittamaan toimiviksi.
+suuremmat kokonaisuudet pystytään osoittamaan toimiviksi.
 
 \subsubsection{Järjestelmällinen ohjelman kasaaminen}
 
@@ -115,8 +120,8 @@ Opiskelijoille annetaan rajapinta, joka ratkaisun pitää toteuttaa. Rajapinnan
 pohjalta he luovat luokan ja metodirungot. Metodirunkojen tulee olla
 mahdollisimman yksinkertaisia eli niiden pitää sisältää tarvittavat tiedot,
 jotta koodi menee kääntäjästä lävitse. Jos metodi ei palauta mitään, se on
-tyhjä, muussa tapauksessa se palauttaa tyhjää $null$ tai $0$ tietotyypistä
-riippuen.
+tyhjä, ja muussa tapauksessa se palauttaa tyhjää \texttt{null} tai \texttt{0}
+tietotyypistä riippuen.
 
 Tyhjän luokkarakenteen jälkeen luodaan testit. Testit ovat joko yksikkötestejä
 tai aloittelijoiden tapauksessa pääohjelmaan kirjotettuja kutsuja, jotka
@@ -134,26 +139,24 @@ ilmoitettuna tarvitaan erilaisia tarkistuksia, jotta tieto on oikein.
 Päivämäärän tulostaminen on taas helppoa, kun eri osat on tallennettu erikseen.
 
 Eri esitysvaihtoehdoista valitaan keskimäärin helpoin toteuttaa. Luodaan
-ilmentymämuuttujat alustuksineen ja määritellään raja-arvot, kuten kuukaudet
-ovat yhden ja kahdentoista välillä. Tämän jälkeen toteutetaan metodit. Metodien
-toteuttamiseen Caspersen on selvittänyt hyvän algoritmin:
-
-Niin kauan kuin on toteuttamaton metodi, niin valitse toteuttamaton metodi ja
-toteuta se. Paranna ja testaa metodia niin kauan kunnes se on valmis.
+ilmentymämuuttujat alustuksineen ja määritellään raja-arvot, kuten kuukausissa
+mahdolliset arvot ovat yhden ja kahdentoista välillä. Tämän jälkeen toteutetaan
+metodit. Metodien toteuttamiseen Caspersen on selvittänyt hyvän algoritmin:
 
 Metodien toteuttamisella ei ole järjestystä, mutta on suositeltavaa toteuttaa
 ensin helpoin ja siirtyä sitten seuraavaksi helpompaan. Metodi on valmis, kun
-siinä ei ole mitään refaktoroitavaa. On tärkeää pitää vain yksi metodi työn
-alla, sillä siten mahdolliset ongelmat liittyvät ovat rajattu kyseiseen
+siinä ei ole mitään refaktoroitavaa. On tärkeää pitää vain yksi metodi
+kerrallaan työn alla, sillä siten mahdolliset ongelmat rajautuvat kyseiseen
 metodiin.
 
 \subsection{Opetukseen sisällyttäminen}
 
 On erityisen tärkeää tuoda ongelmanratkaisuprosessi esille opetuksessa.
 Oppikirjoista ei voi opetella tätä vaan tarvitaan vaihtoehtoisia
-oppimateriaaleja \cite{Bennedsen:2008}. Koko luku käsittelee tätä lähdettä.
+oppimateriaaleja, joita käsitellään tässä luvussa. Koko luku perustuu lähteeseen
+\cite{Bennedsen:2008}.
 
-Liitutaulun käyttö on yleistä matematiikan opetuksessa ja sitä voi hyödyntää
+Liitutaulun käyttö on yleistä matematiikan opetuksessa ja sitä voidaan hyödyntää
 samoin ohjelmoinnin opetuksessa. Opiskelijat ovat mukana kehityksessä, joten he
 voivat kommentoida ja ohjata toteutusta. Ongelmana liitutaulun käytössä on se,
 että tila on todella rajallista, joten suurempia ohjelmia sillä ei voi esittää.
