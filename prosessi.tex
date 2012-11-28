@@ -149,60 +149,45 @@ siinä ei ole mitään refaktoroitavaa. On tärkeää pitää vain yksi metodi
 kerrallaan työn alla, sillä siten mahdolliset ongelmat rajautuvat kyseiseen
 metodiin.
 
-\subsection{Opetukseen sisällyttäminen}
+\subsection{Hyvä koodi}
 
-On erityisen tärkeää tuoda ongelmanratkaisuprosessi esille opetuksessa.
-Oppikirjoista ei voi opetella tätä vaan tarvitaan vaihtoehtoisia
-oppimateriaaleja, joita käsitellään tässä luvussa. Koko luku perustuu lähteeseen
-\cite{Bennedsen:2008}.
+Hyvällä koodilla (clean code) on useita määritelmiä, mutta pääpiirteet ovat
+samoja \cite{Martin:2008:CCH:1388398}. Ohjelmointiin liittyvien
+ongelmanratkaisuprosessien tuloksena syntyvä koodi on yleensä hyvää koodia.
 
-Liitutaulun käyttö on yleistä matematiikan opetuksessa ja sitä voidaan hyödyntää
-samoin ohjelmoinnin opetuksessa. Opiskelijat ovat mukana kehityksessä, joten he
-voivat kommentoida ja ohjata toteutusta. Ongelmana liitutaulun käytössä on se,
-että tila on todella rajallista, joten suurempia ohjelmia sillä ei voi esittää.
+Hyvän koodin kirjoittaminen on tärkeä asia ohjelmoinnissa, sillä huono koodi
+hidastaa kehitystä ja mahdollistaa virheiden syntymisen. Yleinen virhe on
+todeta, että korjaa huonon koodin myöhemmin, sillä yleensä myöhemmin tarkoittaa
+ei koskaan. Tällöin huono koodi jää elämään.
 
-Piirtoheittimen käyttö ratkaisee tilan puuteen, mutta valmiiksi tehtyihin
-kalvoihin opiskelijat eivät pääse vaikuttamaan. Ratkaisun esitystahti on
-haastava pitää sopivana, jotta opiskelijat ymmärtävät varmasti, mitä missäkin
-tehtiin ja miksi. Videotykiltä esitetyissä esimerkeissä on täsmälleen sama
-ongelma, joten uusi teknologia ei ratkaise ongelmaa tällä tavoin.
+Koodin luettavuus on tärkeä. Logiikan tulee olla suoraviivaista, jolloin virheet
+eivät huku epäselvän logiikan sekaan. Hyvää koodia on mieluisa lukea ja siitä
+saa hyvän kuvan ohjelman toiminnallisuudesta. Myös muidenkin kuin alkuperäisen
+kehittäjän tulee pystyä ymmärtämään koodi.
 
-Teknologia mahdollistaa tarvittavat olosuhteet. Liitutaulun käytössä opiskelijat
-otetaan mukaan ja piirtoheitinkalvoihin saa tarpeeksi isoja kokonaisuuksia.
-Tietokone ja videotykki mahdollistavat kehitystyökalujen käytön luennolla,
-jolloin opiskelijat näkevät oikeanlaista ohjelmointia ja voivat itse vaikuttaa
-lopputulokseen. Kuitenkin luento kestää vain määrätyn ajan, joten kovin
-monimutkaisia ohjelmia ei voida esittää. Lisäksi opiskelija näkee
-ohjelmointiprosessin vain kerran eikä hän voi palata siihen kuten esimerkiksi
-kirjan esimerkkiin, jonka voi lukea monta kertaa.
+Nimeämiskäytännön tulee olla selkeä ja asioilla tulee olla selkeät nimet.
+Koodissa ei tule olla toistoa. Eri asioiden, kuten luokkien, metodien,
+funktioiden ja samankaltasuuden, määrä tulee minimoida.
 
-Onneksi nykyään luennot on mahdollista nauhoittaa, jolloin opiskelijat voivat
-katsoa luentovideon moneen kertaan, kunnes ymmärtävät miten ohjelmointiprosessi
-toimi luennolla esitetyssä ongelmassa. Tämän jälkeen heidän on helppo palata
-tarkistamaan kehitysprosessin eteneminen, kun tehtäviä tehdessä tarvitsevat
-apua. Eri ihmisillä kestää eri aika sisäistää luennon asia, joten
-kertausmahdollisuus on eduksi.
+Riippuvuuksien tulee olla vähäisiä, mikä helpottaa ylläpitämistä. Riippuvuuksien
+pitää olla selkeästi määriteltyjä ja niiden pitää tarjota selkeä, pieni
+käyttörajapinta.
 
-On tärkeää, että videoissa on sisällysluettelo, jolloin opiskelijat löytävät
-helposti tarvitsemansa kohdan videosta. Mitä helpommin opiskelija saa videoilta
-etsimänsä tiedon, sitä vähemmän kirjallisesta materiaalista on tarve etsiä
-tiettyä asiaa.
+Yksikkötestit on tärkeä osa hyvää koodia, sillä ne kertovat koodin
+toimivuudesta. Testattua koodia on helppo parantaa ja testit tuovat varmuutta,
+että muutettu koodi tekee myös ne asiat, joita se alunperin teki.
+Virheidenkäsittelyn tulee pysyä samana sovelluksen eri osissa. Testit
+määrittävät koodin ulkoisen rajapinnan, joten niillä on helppo valvoa
+virheidenkäsittelyä.
 
-Liian käsikirjoitetut luennot ovat huonoja, sillä silloin tilanne ei vastaa
-todellisuutta ja opiskelijat voivat tylsistyä. Sopiva määrä improvisointia ja
-mahdolliset virheet ovat hyväksi, koska silloin nähdään, että ohjelmoidessa on
-luontaista tehdä välillä virheitä. Myös kääntäjän antamia virheilmoituksia on
-syytä käsitellä, jotta ymmärretään, mistä virheet johtuvat.
+Test-driven development (lyhyesti TDD) on yleinen tapa kirjoittaa koodia.
+TDD:ssä ensin kirjoitetaan testi, jonka jälkeen testin toteuttava koodi. Tällä
+tavoin meneteltynä koodista tulee hyvää ja testattua.
 
-Luennoilla on tärkeä näyttää myös refaktorointia. Aluksi tuetettu ratkaisu tekee
-asiansa, mutta se ei välttämättä ole hyvää koodia. Refaktorointi on yleinen osa
-ohjelmointia, joten se tulee tuoda siten myös esille ja näyttää miten
-refaktoroidaan.
+Suorituskyvyn tulee olla hyvä, mutta se ei saa tuoda mukanaan sekavuutta
+koodiin. Jotkut optimoinnit voivat olla todella rumia, joten ne on syytä jättää
+pois.
 
-% TODO: selitä hyvä koodi
-
-Olemassa olevan koodin lukeminen ja muokkaaminen ovat tavallisimpia tehtäviä
-kelle tahansa ohjelmoijalle \cite{Kolling:2008}. Oppimisen kannalta on suotavaa
-käydä lävitse muiden kirjottamaa koodia varhaisessa vaiheessa. Muiden koodin
-korjaaminen auttaa hahmottamaan, mitkä ovat hyviä käytäntöjä ja mitä hyötyä on
-siitä, että koodin ylläpidettävyys on hyvä.
+Hyvä koodi on yleisesti ottaen myös kaunista koodia, joka on kuin ongelmaa
+kuvaava kieli. Jokainen koodin osa tekee juuri sen asian, mikä sen on
+tarkoituskin tehdä eikä yhtään enempää.
