@@ -1,9 +1,12 @@
-\section{Opetukseen sisällyttäminen}
+\section{Prosessin tuominen opetukseen}
 
 On erityisen tärkeää tuoda ongelmanratkaisuprosessi esille opetuksessa.
 Oppikirjoista ei voi opetella tätä vaan tarvitaan vaihtoehtoisia
-oppimateriaaleja, joita käsitellään tässä luvussa. Koko luku perustuu lähteeseen
-\cite{Bennedsen:2008}.
+oppimateriaaleja, joita käsitellään tässä luvussa.
+
+\subsection{Vaihtoehtoiset esitystavat}
+
+Koko luku perustuu lähteeseen \cite{Bennedsen:2008}.
 
 Liitutaulun käyttö on yleistä matematiikan opetuksessa ja sitä voidaan hyödyntää
 samoin ohjelmoinnin opetuksessa. Opiskelijat ovat mukana kehityksessä, joten he
@@ -43,13 +46,93 @@ mahdolliset virheet ovat hyväksi, koska silloin nähdään, että ohjelmoidessa
 luontaista tehdä välillä virheitä. Myös kääntäjän antamia virheilmoituksia on
 syytä käsitellä, jotta ymmärretään, mistä virheet johtuvat.
 
-Luennoilla on tärkeä näyttää myös refaktorointia. Aluksi tuetettu ratkaisu tekee
-asiansa, mutta se ei välttämättä ole hyvää koodia. Refaktorointi on yleinen osa
-ohjelmointia, joten se tulee tuoda siten myös esille ja näyttää miten
-refaktoroidaan.
+\subsection{Hyvä koodi kunniaan}
+
+Luennoilla ja materiaalissa on tärkeä tähdentää, että oma koodi on vasta sitten
+valmis, kun se on hyvää koodia. Luennoilla on tärkeä näyttää myös
+refaktorointia. Aluksi tuetettu ratkaisu tekee asiansa, mutta se ei välttämättä
+ole hyvää koodia. Refaktorointi on yleinen osa ohjelmointia, joten se tulee
+tuoda siten myös esille ja näyttää miten refaktoroidaan.
+
+Jotta voidaan refaktoroida, tarvitaan testejä. Testit eivät tarkoita välttämättä
+yksikkötestejä vaan pääohjelmaa, jossa määritellään, mitä ohjelma tekee.
+Ohjelman toimivuuden näkee sitten pääohjelman ajamalla ja tulosteet
+tarkistamalla. Tämä on varsin kevyt tapa toteuttaa yksinkertaiset testit.
+Myöhemmin voidaan mainita, että oikeasti tulee käyttää yksikkötestejä, kuten
+palautuksen yhteydessä on käytetty. Opiskelijoiden ei tarvitse itse osata
+ensimmäisten ohjelmointikurssien jälkeen kirjoittaa yksikkötestejä, mutta
+yleinen testaamisen ymmärtäminen on syytä osata.
+
+Helsingin yliopistolla ohjelmointikurssien jälkimmäisellä puoliskolla
+opiskelijat osallistuvat ohjelmistotekniikan menetelmät -kurssille, jossa
+käsitellään myös yksikkötestausta. Tällä kurssilla tulee olla yhtenä osana
+yksikkötestien lukeminen ja pienessä määrin kirjoittaminen. Tämä luo pohjatiedot
+harjoitustyökursseille, joissa tulee omalle ohjelmalle tehdä yksikkötestit.
 
 Olemassa olevan koodin lukeminen ja muokkaaminen ovat tavallisimpia tehtäviä
 kelle tahansa ohjelmoijalle \cite{Kolling:2008}. Oppimisen kannalta on suotavaa
 käydä lävitse muiden kirjottamaa koodia varhaisessa vaiheessa. Muiden koodin
 korjaaminen auttaa hahmottamaan, mitkä ovat hyviä käytäntöjä ja mitä hyötyä on
 siitä, että koodin ylläpidettävyys on hyvä.
+
+Omalle koodille tulee helposti sokeaksi, jolloin tietyn normiston avulla
+läpikäynti paljastaa ongelmakohtia. Myös aika auttaa näkemään oman koodin
+uudessa valossa. Oman koodin tarkastelu pidemmän ajan päästä paljastaa itselleen
+kehityksen, joka on tullut ajan saatossa. Mutta on tärkeä palata vanhaan koodiin
+ja etsiä ongelmakohdat, jotta ne on helpompi tiedostaa ja korjata välittömästi
+jatkossa vastaantullessa.
+
+Omaa koodia ei tarvitse hävetä vaan siitä tulee oppia. Jokainen on joskus
+kirjoittanut huonoa koodia, yleensä tiedostamatta. Siksi on tärkeä oppia
+tunnistamaan huono koodi hyvästä koodista.
+
+\subsection{Oikeanlaiset videot, kirjallinen materiaali ja tehtävät}
+
+Opiskelijat jaksavat harvoin katsoa pitkiä videoita luennoista. Internetissä
+yleistynyt formaatti on ns. screen cast. Tämän tyyppiset videot ovat enintään
+kymmenen minuutin mittaisia ja sisältävät muutaman käsiteltävän asian. Nämä
+asiat käsitellään sopivalla tasolla, jotta tieto on mahdollista sisäistää jo
+yhden katselukerran jälkeen.
+
+Prosessi on mahdollista tuoda mukaan videoihin. Videon alkupuolella esitellään
+käsiteltävä asia pelkistetysti. Kerrotaan miten se toimii ja mihin sitä
+käytetään. Tämän jälkeen liitetään asia osaksi oikeeta ohjelmaa.
+
+Yleisen rakenteen, kuten silmukan, osalta oikea ohjelma voi esimerkiksi käydä
+lävitse numerolistan alkiot ja tulostaa kunkin alkion kohdalta löytyvän luvun.
+Tietorakenteen, kuten ArrayList, osalta oikea ohjelma voi esimerkiksi lisätä
+päivän ruokalistaan aterioita ja tulostaa, mitä tänään on ruokavaihtoehtoina.
+
+Oikea ohjelma voi sisältää myös aikaisemmin opitun tavan asian tekoon, jolloin
+ohjelma refaktoroitaisiin käyttämään uutta tapaa. Muutenkin kaikkia mainittuja
+tapoja tulee viljellä sopivasti videoihin. Liika viljely taas vie keskittymisen
+käsiteltävästä asiasta. Luennolla voi taas viljellä enemmän ja tehdä ensin
+virheitä, koska ne kuuluu osana ohjelmointia.
+
+On tärkeä pitää videoiden rakenne samana, jolloin opiskelijalle on selkeä,
+milloin käsitellään mitäkin asiaa.
+
+Opiskelijat lukevat harvoin materiaalia tai siitä vain mielestään oleelliset
+kohdat. Tähän ohjelmointikursseilla on ratkaisuna materiaalin ja tehtävänantojen
+yhdistäminen. Tehtävät on ripoteltu materiaalin sekaan, jolloin opiskelijan on
+helppo löytää tehtävää koskeva kohta materiaalista, kun se löytyy tehtävän
+yläpuolelta.
+
+Pitkä kirjallinen materiaali ei kannusta ketään lukemaan sitä, joten materiaali
+on syytä pitää niin lyhyenä kuin mahdollista. Käsitelty asia tulee ilmaista
+lyhyesti ja ytimekkäästi. Sen liitteenä on video, jossa näytetään miten asiaa
+käytetään, ja pieni esimerkkiohjelma, josta opiskelija luultavasti kopioi
+ratkaisuunsa käsitellyt asiat. Jottei teoria unohdu kokonaan, niin sille on
+muutaman kappaleen verran tilaa. Tämä vastaa videolla olevaa motivaatiota.
+
+Tehtävissä voi harrastaa toistuvuutta. Viikottain laajennetaan ja refaktoroidaan
+edelliseltä viikolta tuttuja ratkaisuja. Täten ongelmaan liittyvä taustatieto
+vähentyy ja itse asiaan on helppo keskittyä. Tehtävien aihealueet on syytä
+miettiä tarkasti, jottei opiskelijat turhaudu ns. tylsien tehtävien parissa.
+
+Koska tehtävien runko tulee valmiina, niin ei haittaa jos ei ehtinyt viime
+viikolla tehdä kaikkea. Samalla tulee tutustuttua edellisen viikon tehtävien
+mallivastauksiin ja täten oppia hyviä käytäntöjä.
+
+Tämän tyylinen lähestymistapa näyttää opiskelijoille myös inkrementaalista
+kehitystä, mikä on nykyään yleistä ohjelmistoalalla.
